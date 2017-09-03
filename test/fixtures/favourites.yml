@@ -1,0 +1,9 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  building_id: one
+  user_id: one
+
+two:
+  building_id: two
+  user_id: two
