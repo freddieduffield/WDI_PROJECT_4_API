@@ -15,7 +15,7 @@ class BuildingsController < ApplicationController
 
   # POST /buildings
   def create
-    @building = Building.new(building_params)
+    @building = @current_user.buildings.create!(building_params)
 
     if @building.save
       render json: @building, status: :created, location: @building
