@@ -1,4 +1,4 @@
 class Favourite < ApplicationRecord
-  belongs_to :building_id
-  belongs_to :user_id
+  belongs_to :building_ids
+  belongs_to :user_ids
 end

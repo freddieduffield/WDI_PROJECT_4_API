@@ -10,7 +10,6 @@ class Auth
 
   def self.decode(token, leeway=0)
     decoded = JWT.decode(token, auth_secret, true, { leeway: leeway, algorithm: ALGORITHM})
-    # this will allow me to call the values in the decoded hash by string and symbol sintax, both are used in the usage by gems/rails
     HashWithIndifferentAccess.new(decoded[0])
   end
 
