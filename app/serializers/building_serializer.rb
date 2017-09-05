@@ -3,4 +3,5 @@ class BuildingSerializer < ActiveModel::Serializer
   has_one :user
   has_one :period
   has_many :favourites
+  has_many :materials
 end
